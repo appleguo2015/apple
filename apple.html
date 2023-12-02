@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        * {
+            position: absolute;
+            text-align: center;
+            text-shadow: 0px 0px 10px yellow;
+        }
+
+        body {
+            background-color: #999999;
+        }
+
+        .apple_shadow {
+            top: 100px;
+            left: 100px;
+            background-image: url("apple.png");
+            background-size: cover;
+            width: 107px;
+            height: 110px;
+        }
+
+        .apple_shadow2 {
+            top: 105px;
+            left: 100px;
+            background-image: url("apple.png");
+            background-size: cover;
+            width: 107px;
+            height: 110px;
+        }
+
+        .apple {
+            cursor: pointer;
+            top: 95px;
+            left: 100px;
+            background-image: url("apple.png");
+            background-size: cover;
+            width: 107px;
+            height: 110px;
+        }
+
+        .apple:active {
+            transform: translateY(5px);
+        }
+    </style>
+    <link href="favicon.ico" rel="icon">
+    <title>Apple | It's 'appleful'!!!</title>
+    </link>
+    <p style="color: white">Number of clicks please look the console(if you use Google).</p>
+    <div class="apple_shadow"></div>
+    <div class="apple_shadow2"></div>
+    <div class="apple" onclick="f()"></div>
+</head>
+<body>
+<script>
+    var count = 0
+
+    function f() {
+        count++
+        console.log("The number of clicks is " + count)
+    }
+</script>
+</body>
+</html>
